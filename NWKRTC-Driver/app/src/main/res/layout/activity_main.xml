@@ -15,4 +15,23 @@
         android:text="Current Location"
         android:textSize="24sp"/>
 
+<!--    <Switch-->
+<!--        android:id="@+id/loc_switch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Turn On for Live Location "/>-->
+
+
+    <Button
+        android:id="@+id/startService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STart Service"/>
+
+    <Button
+        android:id="@+id/stopService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Service"/>
+
 </LinearLayout>
