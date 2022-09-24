@@ -103,7 +103,9 @@ public class LocationService extends Service {
                         "Lat: "+Double.toString(location.getLatitude()) + '\n' +
                                 "Long: " + Double.toString(location.getLongitude()), Toast.LENGTH_LONG).show();
 
-                databaseReference.child("NWKRTC-Driver").setValue(location.getLatitude()+"\t"+location.getLongitude());
+                LatLngModel latLngModel = new LatLngModel(location.getLatitude(), location.getLongitude());
+
+                databaseReference.child("NWKRTC-Driver").setValue(latLngModel);
 
 
 
